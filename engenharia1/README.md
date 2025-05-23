@@ -76,6 +76,7 @@ Comece com uma solução que funcione de ponta a ponta, mesmo que simples, em ve
 
 ### livro.java
 
+```java
 package biblioteca;
 
 public class Livro {
@@ -103,9 +104,11 @@ public class Livro {
         this.autor = autor;
     }
 }
+```
 
 ### biblioteca.java
 
+```java
 package biblioteca;
 
 import java.util.List;
@@ -142,9 +145,11 @@ public class Biblioteca {
         return livros;
     }
 }
+```
 
 ### teste.java
 
+```java
 package biblioteca;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -168,3 +173,4 @@ class Teste {
         assertEquals(biblioteca.buscarPorAutor("Machado de Assis").size(), 2);
     }
 }
+```
